@@ -1,4 +1,36 @@
 <!DOCTYPE html>
 <html>
+    <title>
+        Esports Team 2
+    </title>
+    <script>
+        function toggleMenu(){
+            var menuTable = document.getElementById("menuItems")
+            if(menuTable.style.visibility == "hidden"){
+                menuTable.style.visibility = "visible"
+            }
+            else{
+                menuTable.style.visibility = "hidden"
+            }
+        }
+    </script>
+    <head>
+        <link href="template.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="header">
+            <button type = "button" onclick="toggleMenu()" class = "menuButton"><img src="images/menuButton.png" width="50" height="50" alt="menu button"></button>
+            <h1>    Site Name    </h1>
+            <h1 class = "username"> Username</h1>
+            <img src="images/profileImg.png" width="50" height="50" alt="menu button" class = "userImage">
+        </div>
+
+        <table class = "menuTable" id = "menuItems">
+            <tr class = "menuItem"><td> Menu</td></tr>
+            <tr class = "menuItem"><td> Find Teammates</td></tr>
+            <tr class = "menuItem"><td> Find Teams</td></tr>
+            <tr class = "menuItem"><td> My Teams</td></tr>
+        </table>
+    </body>
     
 </html>
